@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "express": "^4.16.3",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-scripts": "1.1.5",
-    "webpack-dev-server": "^3.8.1"
+    "react-scripts": "1.1.5"
   },
   "scripts": {
     "start": "react-scripts start",
+    "serve": "webpack-dev-server --watch-poll --host 0.0.0.0 --public 0.0.0.0:8080",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
